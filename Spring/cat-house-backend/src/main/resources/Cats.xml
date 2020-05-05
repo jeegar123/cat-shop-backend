@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.cathouse.app.model.Cats">
+        <table name="cats" schema="cat_house" catalog=""/>
+        <attributes>
+            <id name="catId">
+                <column name="cat_id" precision="11"/>
+            </id>
+            <basic name="catName">
+                <column name="cat_name" length="30"/>
+            </basic>
+            <basic name="catGender">
+                <column name="cat_gender" length="10"/>
+            </basic>
+            <basic name="catBreed">
+                <column name="cat_breed" length="50"/>
+            </basic>
+            <basic name="catWeight">
+                <column name="cat_weight" precision="11"/>
+            </basic>
+            <basic name="catAge">
+                <column name="cat_age" precision="11"/>
+            </basic>
+            <basic name="catDetails">
+                <column name="cat_details"/>
+            </basic>
+            <basic name="catColor">
+                <column name="cat_color" length="10"/>
+            </basic>
+            <basic name="catPhoto">
+                <column name="cat_photo" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="createdDate">
+                <column name="created_date" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updatedDate">
+                <column name="updated_date" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
